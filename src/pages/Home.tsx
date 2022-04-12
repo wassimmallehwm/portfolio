@@ -1,5 +1,5 @@
 import React from 'react'
-import { HiArrowNarrowRight } from 'react-icons/hi'
+import { HiArrowNarrowDown, HiArrowNarrowRight } from 'react-icons/hi'
 
 import myImg from '../assets/me-blured.png'
 const Home = () => {
@@ -15,10 +15,16 @@ const Home = () => {
                     Molestias ad eveniet, quos quod eligendi laudantium eaque,
                     quo distinctio voluptatem eum quas consectetur neque?
                 </p>
-                <button className='flex justify-center items-center border-2 border-primary rounded-md w-fit px-6 py-2 font-bold hover:bg-primary hover:text-slate-100 duration-500'>
+                <div className='flex gap-4'>
+                <a href='#about' className='flex justify-center items-center border-2 border-primary rounded-md w-fit px-6 py-2 font-bold hover:bg-primary hover:text-slate-100 duration-500'>
+                    About Me
+                    {/* <HiArrowNarrowRight className='ml-2'/> */}
+                </a>
+                <a href='#work' className='flex justify-center items-center border-2 border-primary rounded-md w-fit px-6 py-2 font-bold bg-primary text-slate-100 '>
                     View Work 
-                    <HiArrowNarrowRight className='ml-2'/>
-                </button>
+                    <HiArrowNarrowDown className='ml-2'/>
+                </a>
+                </div>
             </div>
         </div>
     )

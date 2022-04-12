@@ -7,6 +7,8 @@ module.exports = {
       backgroundImage: theme => ({
         'workImg': "url('/src/assets/workImg.jpeg')",
         'realEstate': "url('/src/assets/realestate.jpg')",
+        'crudGenerator': "url('/src/assets/work/crud-generator.jpg')",
+        'personalityTest': "url('/src/assets/work/personality-test.jpg')",
       }),
       colors: {
         primary: "#005366",

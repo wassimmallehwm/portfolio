@@ -1,22 +1,26 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './App.css';
-import About from './components/About';
-import Contact from './components/Contact';
-import Home from './components/Home';
+import About from './pages/About';
+import Contact from './pages/Contact';
+import Home from './pages/Home';
 
-import Navbar from './components/Navbar';
-import Skills from './components/Skills';
-import Work from './components/Work';
+import Navbar from './pages/Navbar';
+import Skills from './pages/Skills';
+import Work from './pages/Work';
 
 function App() {
+
+  const [navbarOpen, setNavbarOpen] = useState<boolean>(false)
+
+  const toggleNav = () => setNavbarOpen(!navbarOpen)
   return (
     <main>
-    <Navbar/>
-    <Home/>
-    <About/>
-    <Skills/>
-    <Work/>
-    <Contact/>
+      <Navbar isOpen={navbarOpen} toggleNav={toggleNav} />
+      <Home />
+      <About />
+      <Skills />
+      <Work navbarOpen={navbarOpen} />
+      <Contact />
     </main>
   );
 }
