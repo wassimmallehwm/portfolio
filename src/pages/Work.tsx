@@ -20,6 +20,11 @@ const Work = ({
             code: 'https://github.com/wassimmallehwm/node.js_crud_generator'
         },
         {
+            bg: 'nazoutex',
+            title: 'Nazoutex',
+            demo: 'https://nazoutex.netlify.app/'
+        },
+        {
             bg: 'personalityTest',
             title: 'Personality test',
             demo: 'https://test-personality.netlify.app',
@@ -42,7 +47,7 @@ const Work = ({
 
                         {
                             workList && workList.map(({bg, title, demo, code}: any) => (
-                                <Card key={bg} bg={bg} title={title} demo={demo} code={code} />
+                                <Card key={bg} bg={bg} title={title} demo={demo ? demo : null} code={code ? code : null} />
                             ))
                         }
 

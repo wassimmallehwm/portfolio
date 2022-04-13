@@ -9,6 +9,7 @@ module.exports = {
         'realEstate': "url('/src/assets/realestate.jpg')",
         'crudGenerator': "url('/src/assets/work/crud-generator.jpg')",
         'personalityTest': "url('/src/assets/work/personality-test.jpg')",
+        'nazoutex': "url('/src/assets/work/nazoutex.png')",
       }),
       colors: {
         primary: "#005366",
