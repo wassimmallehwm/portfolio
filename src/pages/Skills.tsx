@@ -12,8 +12,8 @@ import SkillItem from '../components/SkillItem'
 
 const Skills = () => {
     return (
-        <div id="skills" className='w-full md:h-screen bg-slate-100 text-primary'>
-            <div className='max-w-[900px] mx-auto w-full h-full px-4 flex flex-col justify-center'>
+        <div id="skills" className='w-full min-h-screen bg-slate-100 text-primary'>
+            <div className='max-w-[1000px] mx-auto w-full h-full px-4 flex flex-col justify-center'>
                 <div className='mt-20'>
                     <p className='text-4xl font-bold inline border-b-4 border-primary_blur'>
                         Skills

@@ -5,8 +5,6 @@ module.exports = {
   theme: {
     extend: {
       backgroundImage: theme => ({
-        'workImg': "url('/src/assets/workImg.jpeg')",
-        'realEstate': "url('/src/assets/realestate.jpg')",
         'crudGenerator': "url('/src/assets/work/crud-generator.jpg')",
         'personalityTest': "url('/src/assets/work/personality-test.jpg')",
         'nazoutex': "url('/src/assets/work/nazoutex.png')",
@@ -20,7 +18,6 @@ module.exports = {
         linkedin: "#0072b1"
       },
       fontFamily: {
-        header: ["Oooh Baby", ...defaultTheme.fontFamily.sans]
       },
       transitionProperty: {
         'width': 'width'

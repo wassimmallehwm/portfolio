@@ -3,6 +3,7 @@ import logo from '../assets/logo-128.png'
 import { FaBars, FaGithub, FaLinkedin, FaTimes } from 'react-icons/fa'
 import { HiOutlineMail } from 'react-icons/hi'
 import { BsFillPersonLinesFill } from 'react-icons/bs'
+import resume from '../assets/Wassim_Malleh_Resume.pdf'
 
 interface NavbarProps {
     isOpen: boolean
@@ -35,7 +36,7 @@ const Navbar = ({
     return (
         <nav className={`fixed w-full h-20 flex justify-between items-center px-4 bg-slate-100 text-primary ${scrolled ? 'shadow-md shadow-primary_shadow_light' : ''}`}>
             <div className='z-10'>
-                <img src={logo} alt='Logo' className='w-20 mx-4' />
+                <img src={logo} alt='Logo' className='w-20 md:mx-4' />
             </div>
             <ul className='hidden md:flex'>
                 <li className='mx-1 py-1 font-bold border-b-2 border-b-transparent hover:border-b-primary'>
@@ -119,7 +120,7 @@ const Navbar = ({
                         </a>
                     </li>
                     <li className='w-40 h-12 py-2 -ml-24  text-slate-100 bg-gray-400 hover:ml-0 duration-500'>
-                        <a href='flex' className='flex justify-between items-center'>
+                        <a href={resume} download="Wassim_Malleh_Resume" className='flex justify-between items-center'>
                             Resume <BsFillPersonLinesFill size={30} />
                         </a>
                     </li>

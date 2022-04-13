@@ -14,8 +14,7 @@ const Card = ({
     code
 }: CardProps) => {
     return (
-        <div className={`shadow-lg shadow-primary_shadow group container rounded-md flex justify-center items-center mx-auto bg-${bg} bg-no-repeat bg-cover bg-center h-[210px]
-        hover:bg-gradient-to-r hover:from-primary_shadow_light to-primary_shadow `}>
+        <div className={`shadow-lg shadow-primary_shadow group container rounded-md flex justify-center items-center mx-auto bg-${bg} bg-no-repeat bg-cover bg-center h-[210px] hover:bg-gradient-to-r hover:from-primary_shadow_light to-primary_shadow `}>
             <div className='opacity-0 group-hover:opacity-100 transition-opacity duration-500'>
                 <span className='text-2xl px-2 mx-auto text-center font-bold text-slate-100 tracking-wider'>
                     {title}
