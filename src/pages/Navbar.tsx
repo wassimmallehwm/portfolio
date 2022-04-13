@@ -1,5 +1,5 @@
 import React, { useCallback, useEffect, useState } from 'react'
-import logo from '../assets/logo-128.png'
+import logo from '../assets/logo-512.png'
 import { FaBars, FaGithub, FaLinkedin, FaTimes } from 'react-icons/fa'
 import { HiOutlineMail } from 'react-icons/hi'
 import { BsFillPersonLinesFill } from 'react-icons/bs'
